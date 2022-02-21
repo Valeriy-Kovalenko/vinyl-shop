@@ -1,8 +1,14 @@
 <template>
   <div class="main-menu">
-    <div class="main-menu__block">1</div>
-    <div class="main-menu__block">2</div>
-    <div class="main-menu__block">3</div>
+    <div class="main-menu__block">
+      <router-link class="button" to="">Buy</router-link>
+    </div>
+    <div class="main-menu__block">
+      <router-link class="button" to="">Buy</router-link>
+    </div>
+    <div class="main-menu__block">
+      <router-link class="button" to="">Buy</router-link>
+    </div>
   </div>
 </template>
 

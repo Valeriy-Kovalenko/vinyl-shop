@@ -15,7 +15,7 @@
       </div>
       <div class="recommendation__price">
         <p>14$</p>
-        <button class="button">Buy</button>
+        <router-link class="button" to="">Buy</router-link>
       </div>
     </div>
   </div>
@@ -83,11 +83,14 @@ export default {
   margin: 0 1rem;
 }
 
-.button {
+.button,
+a {
   background: antiquewhite;
   border: 1px solid black;
   border-radius: 10px;
-  width: 4rem;
-  height: 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+  padding: 0.3rem 0.5rem;
 }
 </style>
