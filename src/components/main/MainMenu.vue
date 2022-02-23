@@ -1,13 +1,16 @@
 <template>
   <div class="main-menu">
     <div class="main-menu__block">
-      <router-link class="button" to="">Buy</router-link>
+      <p class="main-menu__block-text">Genre</p>
+      <router-link class="button" to="">Search</router-link>
     </div>
     <div class="main-menu__block">
-      <router-link class="button" to="">Buy</router-link>
+      <p class="main-menu__block-text">Rare</p>
+      <router-link class="button" to="">Check</router-link>
     </div>
     <div class="main-menu__block">
-      <router-link class="button" to="">Buy</router-link>
+      <p class="main-menu__block-text">Random</p>
+      <router-link class="button" to="">Help</router-link>
     </div>
   </div>
 </template>
@@ -32,7 +35,16 @@ export default {
 
 .main-menu__block {
   border: 1px solid black;
-  width: 15%;
-  height: 80%;
+  width: 25%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("../../assets/rare2.jpg");
+}
+
+.main-menu__block-text {
+  font-size: 1.5rem;
 }
 </style>

@@ -31,4 +31,12 @@ body {
   padding: 0;
   height: 100%;
 }
+
+.button {
+  text-decoration: none;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+}
 </style>

@@ -31,7 +31,7 @@ export default {
 
 .recommendation {
   margin: 0 auto;
-  height: 20rem;
+  height: 19rem;
   width: 100%;
   border-bottom: 1px solid black;
   background: lightblue;
@@ -79,18 +79,10 @@ export default {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-size: 2rem;
   margin: 0 1rem;
 }
 
-.button,
-a {
-  background: antiquewhite;
-  border: 1px solid black;
-  border-radius: 10px;
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: black;
-  padding: 0.3rem 0.5rem;
+.recommendation__price p {
+  font-size: 2rem;
 }
 </style>
