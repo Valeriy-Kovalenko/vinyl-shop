@@ -10,7 +10,6 @@
       </div>
       <div class="recommendation__price">
         <p>{{ song.price }}$</p>
-        <p>{{ getNumber }}</p>
         <router-link class="button" to="">Buy</router-link>
       </div>
     </div>
@@ -20,20 +19,22 @@
 <script>
 export default {
   data() {
-    return {
-      number: 0,
-    };
+    return {};
   },
   computed: {
     songs() {
       return this.$store.getters.songs;
     },
     song() {
-      return this.songs[this.number];
+      this.getRandomNumber();
+      const number = this.getRandomNumber();
+      return this.songs[number];
     },
-    getNumber() {
-      const num = (Math.random() * 10);
-      return Math.round(num);
+  },
+  methods: {
+    getRandomNumber() {
+      const today = new Date().getDate();
+      return today % this.songs.length;
     },
   }
 }
