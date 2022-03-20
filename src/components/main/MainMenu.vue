@@ -25,7 +25,7 @@ export default {
 
 .main-menu {
   margin: 1rem auto;
-  height: 15rem;
+  height: 20rem;
   width: 95%;
   display: flex;
   justify-content: space-around;
@@ -42,9 +42,15 @@ export default {
   justify-content: space-around;
   align-items: center;
   background-image: url("../../assets/rare2.jpg");
+  color: white;
 }
 
 .main-menu__block-text {
   font-size: 1.5rem;
+}
+
+.button {
+  color: white;
+  border-color: white;
 }
 </style>
