@@ -3,13 +3,13 @@
     <h1 class="recommendation__header">RECOMMENDATION OF THE DAY</h1>
     <div class="recommendation__main">
       <div class="recommendation__cover-container">
-        <img class="recommendation__cover" :src="song[1].url">
+        <img class="recommendation__cover" :src="song.url">
       </div>
       <div class="recommendation_text">
-        <p>{{ song[1].description }}</p>
+        <p>{{ song.description }}</p>
       </div>
       <div class="recommendation__price">
-        <p>{{ song[1].price }}$</p>
+        <p>{{ song.price }}$</p>
         <router-link class="button" to="">Buy</router-link>
       </div>
     </div>
@@ -19,11 +19,16 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      number: 0,
+    };
   },
   computed: {
-    song() {
+    songs() {
       return this.$store.getters.songs;
+    },
+    song() {
+      return this.songs[this.number];
     }
   }
 }
